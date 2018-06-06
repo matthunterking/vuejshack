@@ -1,0 +1,11 @@
+{
+  "name": "vuejshack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:matthunterking/vuejshack.git",
+  "author": "Poynter111 <alex.poynter111@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}
