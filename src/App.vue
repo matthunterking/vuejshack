@@ -2,16 +2,19 @@
   <div id="app">
     <img src="./assets/logo.png">
     <Index v-bind:pokemon="pokemon"/>
+    <Show />
   </div>
 </template>
 
 <script>
 import Index from './components/Index'
+import Show from './components/Show'
 
 export default {
   name: 'app',
   components: {
-    Index
+    Index,
+    Show
   },
   data () {
     return {

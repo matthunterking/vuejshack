@@ -2,9 +2,9 @@
   <div>
     <h1>Poke-Vue</h1>
     <p>Created By Matt and Alex</p>
-    <div v-bind:pokemon='pokemon'>
+    <div v-bind:key='pokemon.name' v-for="pokemon in pokemon">
       <p>{{pokemon.name}}</p>
-      <p>{{pokemon.type}}</p>
+      <p>{{pokemon.url}}</p>
     </div>
   </div>
 </template>
@@ -13,19 +13,19 @@
 import axios from 'axios'
 
 export default {
-  data() {
+  name: 'index',
+  data () {
     return {
       pokemon: []
-    };
+    }
   },
 
-  mounted() {
+  mounted () {
     axios
       .get('https://pokeapi.co/api/v2/generation/1')
       .then(res => this.pokemon = res.data.pokemon_species)
-      .then(console.log('--->', this.pokemon));
   }
-};
+}
 
 </script>
 
