@@ -1,30 +1,16 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <Index v-bind:pokemon="pokemon"/>
-    <Show />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Index from './components/Index'
-import Show from './components/Show'
 
 export default {
   name: 'app',
-  components: {
-    Index,
-    Show
-  },
   data () {
     return {
-      pokemon: [{
-        name: 'Alexamon',
-        type: 'fire'
-      }, {
-        name: 'Mattamon',
-        type: 'Electric'
-      }]
     }
   }
 }
