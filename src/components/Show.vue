@@ -20,9 +20,9 @@ export default {
   },
 
   mounted () {
-    console.log(this.$route.params.id);
+    console.log(this.$route.params.id)
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${this.$route.params.id}`)
+      .get(`https://pokeapi.co/api/v2/pokemon/${this.$route.params.id}`) // eslint-disable-next-line
       .then(res => this.pokemon = res.data)
   }
 }

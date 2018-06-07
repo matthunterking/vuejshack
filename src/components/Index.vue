@@ -26,11 +26,11 @@ export default {
 
   mounted () {
     axios
-      .get('https://pokeapi.co/api/v2/generation/1')
-      .then(res => this.pokemon = res.data.pokemon_species)
+      .get('https://pokeapi.co/api/v2/generation/1') // eslint-disable-next-line
+      .then(res => this.pokemon = res.data.pokemon_species) 
   },
   methods: {
-    goShow() {
+    goShow () {
       this.$router.push('/show/1')
     }
   }
