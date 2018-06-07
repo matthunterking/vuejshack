@@ -16,6 +16,7 @@
             <div v-bind:key='pokemon.stat' v-for="stat in pokemon.stats">
               <p>{{ stat.stat.name }} - {{ stat.base_stat }}</p>
             </div>
+            <router-link to='/'>Back</router-link>
         </div>
       </div>
     </div>
