@@ -6,6 +6,8 @@ import App from './App'
 import Show from './components/Show'
 import Index from './components/Index'
 
+import './assets/scss/style.scss'
+
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
